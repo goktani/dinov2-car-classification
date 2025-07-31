@@ -5,12 +5,10 @@ Fine-tuning DINOv2 on a car image dataset for classification using both local sc
 
 > **Note:**  
 > Current results do not meet the desired accuracy. Used batch size: 32, epochs: 20.
-
+```
 ## Project Structure
 
-```
-dinov2/
-│
+```batch
 ├── dataset.py                 # Data preparation script
 ├── model.py                   # DINOv2 model setup
 ├── inference.py               # Inference on images
@@ -20,12 +18,13 @@ dinov2/
 ├── dinov2info.jpeg            # DINOv2 comparison image
 ├── dinov2_finetuned_car5.pth  # Model weights
 ├── DINOv2- Görsel Temsil...pdf # DINOv2 info (Turkish)
-│
 ├── test_images/               # Test images (sample)
 ├── test_imagesv0/             # Additional test images
 └── split_dataset/
     └── test/
+        └── 000, 001, 002...
     └── train/
+        └── 000, 001, 002...
     └── val/
         └── 000, 001, 002...
 ```
